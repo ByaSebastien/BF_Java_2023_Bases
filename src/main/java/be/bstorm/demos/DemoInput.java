@@ -9,7 +9,6 @@ public class DemoInput {
 
     public static void main(String[] args) {
 
-        Scanner scan = new Scanner(System.in);
 
 //        System.out.print("Jour : ");
 //        int day = scan.nextInt();
@@ -18,6 +17,10 @@ public class DemoInput {
 //        System.out.print("Année : ");
 //        long year = scan.nextLong();
 
+        Scanner scan = new Scanner(System.in);
+
+        // Création d'une instance de Scanner pour la saisie utilisateur
+
         System.out.print("Jour : ");
         int day = scan.nextInt();
         System.out.print("Mois : ");
@@ -25,10 +28,12 @@ public class DemoInput {
         System.out.print("Année : ");
         int year = scan.nextInt();
 
-        LocalDate date = LocalDate.of(year,month,day);
-//        Date d = new Date(year,month,day);
+        // Saisie de jour, mois et année à partir de la console
 
-//        System.out.println(d);
+        LocalDate date = LocalDate.of(year, month, day);
+
+        // Création d'une instance de LocalDate avec les valeurs saisies
+
         System.out.println(date);
         System.out.println(day + " " + month + " " + year);
     }

@@ -14,10 +14,18 @@ public class ExoHello {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Nom : ");
-        String nom = scan.next();
+        // Demande à l'utilisateur de saisir son prénom
+        System.out.print("Prénom : ");
+        String prenom = scan.next();
+
+        // Obtient la date du jour
         LocalDate today = LocalDate.now();
-        System.out.println("Bonjour " + nom + " nous sommes le " + today.format(DateTimeFormatter.ofPattern("dd MMMM yyyy")));
+
+        // Formate la date selon le modèle "dd MMMM yyyy"
+        String dateFormatted = today.format(DateTimeFormatter.ofPattern("dd MMMM yyyy"));
+
+        // Affiche le message de salutation avec le prénom et la date formatée
+        System.out.println("Bonjour " + prenom + ", nous sommes le " + dateFormatted);
 
 //        String day = today.getDayOfWeek().name();
 //        String monthDay = String.valueOf(today.getDayOfMonth());
