@@ -4,6 +4,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class DemoTableaux {
 
@@ -55,7 +56,18 @@ public class DemoTableaux {
             System.out.println();
         }
 
+        final int TAILLE = 10;
+        int[] tab = new int[TAILLE];
+        int nbElement = 0;
 
+        for (int i = 0; i < TAILLE ; i++){
+            tab[i] = i+1;
+            nbElement++;
+        }
+
+        for (int i = 0; i < nbElement ; i++){
+            System.out.println(tab[i]);
+        }
 
     }
 }
