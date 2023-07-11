@@ -18,6 +18,7 @@ public class ExoComparaison3Nombres {
         System.out.println("Nombre 3 : ");
         int c = scan.nextInt();
 
+        // Comparaison et permutation des nombres pour les trier par ordre croissant
         if(a > b){
             temp = a;
             a = b;
@@ -34,6 +35,7 @@ public class ExoComparaison3Nombres {
             b = temp;
         }
 
+        // Mise à jour des opérateurs de comparaison si des nombres sont égaux
         if(a == b){
             op1 = " = ";
         }
@@ -41,7 +43,7 @@ public class ExoComparaison3Nombres {
             op2 = " = ";
         }
 
-
+        // Affichage du résultat
         System.out.println(a + op1 + b + op2 + c);
 //        result = a + (a < b ? " < " : " = ") + b + (b < c ? " < " : " = ") + c;
 //        System.out.println(result);

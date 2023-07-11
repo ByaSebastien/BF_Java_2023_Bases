@@ -10,6 +10,7 @@ public class ExoWelcome {
         System.out.println("Quel âge avez-vous? ");
         int age = scan.nextInt();
 
+        // Vérification de l'âge pour afficher un message approprié
         if(age < 18){
             System.out.println("As-tu l'accord de ta maman?");
         }else{

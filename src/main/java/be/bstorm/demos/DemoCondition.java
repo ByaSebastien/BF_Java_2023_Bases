@@ -28,6 +28,13 @@ public class DemoCondition {
         }
         System.out.println("finito");
 
+        // Tester l'égalité d'un String
+        String nom = "Toto";
+        // En java ne pas faire nom == "Toto"
+        if(nom.equals("Toto")){
+            System.out.println("c'est Toto!!!");
+        }
+
         // Opérateur ternaire
         String result = nb > 10 ? "Plus grand que 10" : "plus petit ou égal à 10";
         String result2 = nb > 10 ? "Plus grand que 10" : nb < 10 ? "Plus petit que 10" : "Egal à 10";
