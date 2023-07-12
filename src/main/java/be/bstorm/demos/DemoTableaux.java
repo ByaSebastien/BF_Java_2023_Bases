@@ -68,6 +68,5 @@ public class DemoTableaux {
         for (int i = 0; i < nbElement ; i++){
             System.out.println(tab[i]);
         }
-
     }
 }
