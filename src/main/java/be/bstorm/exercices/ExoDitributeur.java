@@ -8,47 +8,58 @@ public class ExoDitributeur {
 
         Scanner scan = new Scanner(System.in);
 
-        boolean enCours = true;
+        // Déclaration des stocks de boissons
         int stockCoca = 10;
         int stockJus = 5;
         int stockCafe = 0;
 
-        while (enCours){
+        // Boucle principale du distributeur
+        while (true) {
 
+            // Affichage du menu
             System.out.println("1 : Coca\n2 : Jus\n3 : Café\n4 : Quitter");
             int choix = scan.nextInt();
 
-            switch (choix){
+            // Traitement du choix de l'utilisateur
+            switch (choix) {
 
                 case 1:
-                    if(stockCoca <= 0){
+                    // Vérification du stock de Coca
+                    if (stockCoca <= 0) {
                         System.out.println("Plus de coca");
-                    }else {
+                    } else {
                         stockCoca--;
                         System.out.println("Voici votre coca");
                     }
                     break;
+
                 case 2:
-                    if(stockJus <= 0){
+                    // Vérification du stock de Jus
+                    if (stockJus <= 0) {
                         System.out.println("Plus de jus");
-                    }else{
+                    } else {
                         stockJus--;
                         System.out.println("Voici votre jus");
                     }
                     break;
+
                 case 3:
-                    if(stockCafe <= 0){
+                    // Vérification du stock de Café
+                    if (stockCafe <= 0) {
                         System.out.println("Plus de café");
-                    }else{
+                    } else {
                         stockCafe--;
                         System.out.println("Voici votre café");
                     }
                     break;
+
                 case 4:
-                    enCours = false;
+                    // Sortie du programme
                     System.out.println("Au revoir!");
-                    break;
+                    return;
+
                 default:
+                    // Choix invalide
                     System.out.println("WTF?");
             }
         }

@@ -10,47 +10,39 @@ public class DemoTableaux {
 
     public static void main(String[] args) {
 
-        String [] names = new String[3];
+        // Déclaration et initialisation d'un tableau de chaînes de caractères
+        String[] names = new String[3];
         names[0] = "Pierre";
         names[1] = "Paul";
         names[2] = "Jacques";
 
-
+        // Affichage d'un élément spécifique du tableau
         System.out.println("Bonjour " + names[2]);
 
-//        System.out.println(strings);
-        for (int i = 0; i < names.length; i++ ){
+        // Parcours du tableau avec une boucle for
+        for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
         }
 
-        for(String s : names) {
+        // Parcours du tableau avec une boucle for-each
+        for (String s : names) {
             System.out.println(s);
         }
 
-//        int[][] ints2D = new int[][]{
-//                {1,2,3},
-//                {4,5,6},
-//                {7,8,9}
-//        };
-
+        // Déclaration et initialisation d'un tableau 2D
         int[][] ints2D = new int[3][3];
 
-//        ints2D[0][0] = 1;
-//        ints2D[0][1] = 2;
-//        ...
         int cpt = 1;
-        for (int i = 0; i < ints2D.length; i++){
-
-            for (int j = 0; j < ints2D[i].length; j++){
-
+        // Parcours du tableau 2D et assignation de valeurs
+        for (int i = 0; i < ints2D.length; i++) {
+            for (int j = 0; j < ints2D[i].length; j++) {
                 ints2D[i][j] = cpt++;
             }
         }
 
-        for (int i = 0; i < ints2D.length; i++){
-
-            for (int j = 0; j < ints2D[i].length; j++){
-
+        // Affichage du tableau 2D
+        for (int i = 0; i < ints2D.length; i++) {
+            for (int j = 0; j < ints2D[i].length; j++) {
                 System.out.print(ints2D[i][j] + " | ");
             }
             System.out.println();
@@ -60,12 +52,14 @@ public class DemoTableaux {
         int[] tab = new int[TAILLE];
         int nbElement = 0;
 
-        for (int i = 0; i < TAILLE ; i++){
-            tab[i] = i+1;
+        // Remplissage du tableau avec des valeurs
+        for (int i = 0; i < TAILLE; i++) {
+            tab[i] = i + 1;
             nbElement++;
         }
 
-        for (int i = 0; i < nbElement ; i++){
+        // Affichage des éléments du tableau
+        for (int i = 0; i < nbElement; i++) {
             System.out.println(tab[i]);
         }
     }

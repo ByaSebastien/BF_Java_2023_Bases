@@ -8,13 +8,17 @@ public class ExoFactoriel {
 
         Scanner scan = new Scanner(System.in);
 
+        // Demande à l'utilisateur d'entrer un nombre
         System.out.print("Nombre : ");
         int nb = scan.nextInt();
         long result = 1;
 
-        for (int i = 2; i <= nb ; i++){
+        // Calcul de la factorielle du nombre
+        for (int i = 2; i <= nb ; i++) {
             result *= i;
         }
-        System.out.println("La factoriel de " + nb + " est => " + result);
+
+        // Affichage du résultat
+        System.out.println("La factorielle de " + nb + " est => " + result);
     }
 }
